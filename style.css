@@ -1,0 +1,150 @@
+body{
+    background-color: #323437;
+    font-family: "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace;
+    color: aliceblue;
+}
+.title{
+    margin-top: 70px;
+    font-size: 25px;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    font-size: 2rem;
+}
+.comment{
+    font-size: 50%;
+    color: #8f8e84;
+}
+.title svg{
+    width: 3%;
+    fill: #e2b714;
+}
+.hidden-textbox {
+    border: none;
+    outline: none;
+    background: none;
+    caret-color: #e2b714;
+    transition: all 80ms;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    resize: none;
+    height: 50px;
+    line-height: 24px;
+}
+
+#wordCount {
+    display: flex;
+    margin-top: 300px;
+    margin-left: 350px;
+    font-size: 30px;
+    color: #8f8e84;
+}
+
+#wpmCount {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 350px;
+    font-size: 30px;
+    color: #8f8e84;
+}
+
+cursor{
+    transition: all 0.5s;
+}
+.bongocat img{
+    width: 10%;
+}
+.bongocat{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+.signature{
+    font-size: 20px;
+    color: #8f8e84;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 7rem;
+}
+
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 3.125em; 
+    height: 1.5625em; 
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 1.125em;
+    height: 1.125em;
+    position: absolute;
+    top: 0.219em;
+    left: 0.219em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 1.125em - 0.219em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+.theme-checkbox{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.light-theme {
+    background-color: #efefef;
+    color: #2a2a2a;
+    .hidden-textbox{
+        color: #2a2a2a;
+    }
+}

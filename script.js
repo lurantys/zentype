@@ -25,10 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedTheme === 'light') {
         document.body.classList.add('light-theme');
         themeCheckbox.checked = true;
+    } else {
+        document.body.classList.add('dark-theme');
     }
 
     themeCheckbox.addEventListener('change', () => {
         document.body.classList.toggle('light-theme', themeCheckbox.checked);
+        document.body.classList.toggle('dark-theme', !themeCheckbox.checked);
         localStorage.setItem('theme', themeCheckbox.checked ? 'light' : 'dark');
     });
 });
